@@ -13,9 +13,9 @@ void enterPackets(Packet indiv[10])
     puts("");
   }
 }
-  
-  
-  void rearrangePackets(Packet indiv[10])
+
+
+void rearrangePackets(Packet indiv[10])
   {
     for(int u = 0; u < 10 - 1; u++)
     {
@@ -34,6 +34,7 @@ void enterPackets(Packet indiv[10])
 
 int printAndStore(Packet indiv[10])
 {
+  char *name[10] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
   FILE *open_file;
   open_file = fopen("main.txt", "a");
   if(open_file == NULL)
@@ -46,7 +47,7 @@ int printAndStore(Packet indiv[10])
   {
     printf("Packet %s\nSerial number: %d\nPriority number: %d\n", name[i], indiv[i].serialNo, indiv[i].priority);
     puts("");
-    fprintf(open_file, "Packet %s\nSerial number: %d\nPriority number: %d\n", name[i], indiv[i].serialNo, indiv[i].priority);
+    fprintf(open_file, "\nPacket %s\nSerial number: %d\nPriority number: %d\n", name[i], indiv[i].serialNo, indiv[i].priority);
     }
     fprintf(open_file, "----------");
     fclose(open_file);

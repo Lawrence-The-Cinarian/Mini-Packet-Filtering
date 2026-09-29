@@ -1,0 +1,31 @@
+----------Packet A
+Serial number: 12
+Priority number: 1
+Packet B
+Serial number: 31
+Priority number: 2
+Packet C
+Serial number: 88
+Priority number: 3
+Packet D
+Serial number: 50
+Priority number: 4
+Packet E
+Serial number: 65
+Priority number: 5
+Packet F
+Serial number: 96
+Priority number: 6
+Packet G
+Serial number: 27
+Priority number: 7
+Packet H
+Serial number: 47
+Priority number: 8
+Packet I
+Serial number: 25
+Priority number: 9
+Packet J
+Serial number: 70
+Priority number: 10
+----------
