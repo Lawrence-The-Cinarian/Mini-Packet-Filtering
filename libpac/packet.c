@@ -1,18 +1,10 @@
+#include "packet.h"
 #include <stdio.h>
 
-typedef struct
+void enterPackets(Packet indiv[10])
 {
-  int priority;
-  int serialNo;
-} Packet;
-
-int main(void)
-{
-  FILE *open_file;
-  Packet indiv[10];
   char *name[10] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
-
-   for(int i = 0; i < 10; i++)
+  for(int i = 0; i < 10; i++)
   {
     printf("Enter serial number for packet %s: ", name[i]);
     scanf("%d", &indiv[i].serialNo);
@@ -20,20 +12,29 @@ int main(void)
     scanf("%d", &indiv[i].priority);
     puts("");
   }
-
-  for(int u = 0; u < 10 - 1; u++)
+}
+  
+  
+  void rearrangePackets(Packet indiv[10])
   {
-    for(int v = 0; v < 10 - u - 1; v++)
+    for(int u = 0; u < 10 - 1; u++)
     {
-      if(indiv[v].priority > indiv[v+1].priority)
+      for(int v = 0; v < 10 - u - 1; v++)
       {
-        Packet temp = indiv[v];
-        indiv[v] = indiv[v+1];
-        indiv[v+1] = temp;
+        if(indiv[v].priority > indiv[v+1].priority)
+        {
+          Packet temp = indiv[v];
+          indiv[v] = indiv[v+1];
+           indiv[v+1] = temp;
+        }
       }
     }
   }
 
+
+int printAndStore(Packet indiv[10])
+{
+  FILE *open_file;
   open_file = fopen("main.txt", "a");
   if(open_file == NULL)
   {
