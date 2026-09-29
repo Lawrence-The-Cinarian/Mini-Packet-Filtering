@@ -38,4 +38,44 @@ Priority number: 9
 Packet J
 Serial number: 60
 Priority number: 10
+--------------------
+Packet A
+Serial number: 98
+Priority number: 0
+
+Packet B
+Serial number: 37
+Priority number: 1
+
+Packet C
+Serial number: 53
+Priority number: 2
+
+Packet D
+Serial number: 43
+Priority number: 3
+
+Packet E
+Serial number: 23
+Priority number: 4
+
+Packet F
+Serial number: 64
+Priority number: 5
+
+Packet G
+Serial number: 55
+Priority number: 6
+
+Packet H
+Serial number: 34
+Priority number: 7
+
+Packet I
+Serial number: 56
+Priority number: 8
+
+Packet J
+Serial number: 64
+Priority number: 9
 ----------

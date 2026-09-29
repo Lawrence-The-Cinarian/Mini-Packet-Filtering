@@ -6,7 +6,7 @@
 void print()
 {
 puts("");
-printf(COLOR_BLUE "MINI FIREWALL\n" COLOR_DEFAULT);
+printf(COLOR_BLUE "\tMINI PACKET FILTERING\n" COLOR_DEFAULT);
 puts("");
 }
 
