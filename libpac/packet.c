@@ -1,5 +1,15 @@
 #include "packet.h"
 #include <stdio.h>
+#define COLOR_BLUE "\x1b[34m"
+#define COLOR_DEFAULT "\x1b[0m"
+
+void print()
+{
+puts("");
+printf(COLOR_BLUE "MINI FIREWALL\n" COLOR_DEFAULT);
+puts("");
+}
+
 
 void enterPackets(Packet indiv[10])
 {
